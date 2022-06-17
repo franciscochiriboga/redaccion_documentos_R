@@ -292,3 +292,5 @@ iris_filt1
 iris_filt2 <- iris %>% filter(Sepal.Length >= 4.9 & Sepal.Width < 3.6)
 iris_filt2
 
+#Comprobación control de versiones
+
