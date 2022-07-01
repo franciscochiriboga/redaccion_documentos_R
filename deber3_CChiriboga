@@ -1,0 +1,24 @@
+---
+title: "Are workers more productive at home"
+author: "César Chiriboga"
+date: "01/07/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+**Are workers more productive at home?**
+
+In modern times, advances in technology helped humanity to be connected in ways that were not possible before. Nowadays, collaborative technology, like video conferencing tools, has created opportunities to interact, in real time, with someone who is a remote distance away. This advantage has eased the development of remote working. Working from home is when an employee works from his place of residence, house, or apartment, instead of physically attending to the office. The COVID-19 pandemic has accelerated the implementation of this modality in all industries. These changes have brought many advantages for employers, especially those regarding productivity.
+
+Estimates made by Global Workplace Analytics said that the 25% American workforce would be working remotely through 2022. In the same vein, a survey from the Becker Friedman Institute for Economics at the University of Chicago found that 55% of respondents said that they felt more productive and engaged from working from home. Another interesting finding of this study is that commuting time was reduced by 62.4 million hours per day over the first month of the pandemic; this means aggregate time savings  of over 9 billion hours.
+
+This time saving allows the workers to reorganize their schedule and even ease sharing time with their families because they have not to spend traveling time traveling to the office. Along the same line, this modality allows people to eat healthily because they  can use one hour of their  time preparing lunch and this will help you save money. On the other hand, working from home  permits employees to establish their custom environment; you can work in your garden having a cup of tea or in your favorite coffee shop. Lastly, working from would be a very good strategy to attract new talent and improve employee retention, especially for employees who have young children 
+
+If we focus the analysis on the side of the employers, the most evident fact is that enterprises will save significant amounts of money, because they do not need to care about renting an office. In the same vein, employers may experience lower turnover rates when offering remote work, for example, if the spouse of a worker got a job in another state, the employee would  need to resign if his modality is face-to-face work.
+
+In conclusion, since the COVID-19 pandemic, teleworking has become the favorite modality for both employees and employers. Enterprises that adopt teleworking can save millions of dollars every year, which can be reinvested in other funds, thus, increasing the size of the firm. On the side of workers, the flexibility of homeworking allows them to spend more time sharing with their families or using this time to develop new abilities.
+
+
+
