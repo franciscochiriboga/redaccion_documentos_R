@@ -39,7 +39,7 @@ unzip(zipfile = enemdu_file,list = T)
 unzip(zipfile = enemdu_file,
       files = c("enemdu_persona_201912.csv",
                 "DICCIONARIO_VARIABLES.zip"),
-      exdir = "04_caso_estudio" )
+      exdir = "04_mi_primer_rmd" )
 
 # Crear directorio: datos
 file.copy(from = "04_mi_primer_rmd/enemdu_persona_201912.csv",
@@ -79,6 +79,7 @@ identificacion <- list(pais="Ecuador",
                                    "5 ciudades: Quito, Guayaquil, Cuenca, Machala, Ambato",
                                    "exceptúa a Galápagos"))
 identificacion
+
 str(identificacion)
 
 
