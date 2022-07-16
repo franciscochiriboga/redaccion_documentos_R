@@ -2,27 +2,32 @@
 title: "Redacción de artículos académicos con R"
 subtitle: "Brecha salarial por sexo"
 author:
-- Bajaña Alex
-- Chanatásig Evelyn
-- Heredia Aracely
+- César Chiriboga
 date: "`r Sys.Date()`"
 output:
   pdf_document: default
   html_document: default
   word_document: default
-bibliography: bibliografia.bib
+bibliography: bibliografia/bibliografia.bib
+toc: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = FALSE,
 	message = FALSE,
-	warning = FALSE
+	warning = FALSE,
+  include=FALSE
 )
 # Instalar el paquete "radxl" 
 if(!"readxl" %in% installed.packages()[,1]){
   install.packages("readxl")
 }
+
+if(!"ymlthis" %in% installed.packages()[,1]){
+  install.packages("ymlthis")
+}
+
 
 if(!"datapasta" %in% installed.packages()[,1]){
   install.packages("datapasta")
@@ -70,7 +75,7 @@ El proposito de este articulo es medir o cuantificar en Ecuador la brecha de gen
 
 ## Lectura de la base
 
-```{r, echo=FALSE, include = TRUE}
+```{r, echo=FALSE}
 # Insertar chunk con ctrl+alt+I
 
 path <- "datos/enemdu_persona_201912.csv"
@@ -138,7 +143,7 @@ flextable(diccionario)
 
 ## Sacar las columnas de la base
 
-```{r,echo=FALSE}
+```{r,echo=TRUE}
 
 # Introducción al select:
 
