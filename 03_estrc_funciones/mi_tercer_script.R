@@ -118,3 +118,123 @@ for (i in variables) {
   print(msm)
   
 }
+
+
+# Versión 2.0 -------------------------------------------------------------
+
+#Condicional:
+
+class(starwars$name)
+
+is.numeric(starwars$mass)
+
+#Loop sobre todas las columnas de un dataframe
+
+for (i in names(starwars)) {
+  
+  variable <- starwars[[i]]
+  
+  msm <- paste("la variable", i, "es un",class(variable))
+  
+  print(msm)
+  
+}
+
+#Loop sobre todas las columnas de un dataframe
+
+for (i in names(starwars)) {
+  
+  variable <- starwars[[i]]
+  
+  msm <- paste("la variable", i, "es un",class(variable))
+  
+  print(msm)
+}
+
+#Condicionales:if solo evalua una condicion a la vez
+
+if (is.numeric(vector)){
+  msm <- paste("la media es", mean(vector,na.rm = T,sep=" "))
+  
+  print(msm)
+}
+
+#Condicional simple
+  
+for (i in names(starwars)) {
+  
+  vector <- starwars[[i]]
+  
+  if (is.numeric(vector)){
+    msm <- paste("la media de", i, "es",mean(vector,na.rm = T,sep=" "))
+    
+    print(msm)
+  }
+  
+}
+
+
+#Condicional con alternativas
+
+if (is.numeric(vector)){
+  msm <- paste("la media es", mean(vector,na.rm = T,sep=" "))
+  
+  print(msm)
+
+}else{ 
+  
+  msm <- paste("la variable", i, "es un", class(variable))
+}
+
+print(msm)
+
+
+#Condicional con alternativas especificas
+
+vector <- starwars$hair_color
+
+unique(vector)
+
+if (is.numeric(vector)){
+  msm <- paste("la media es", mean(vector,na.rm = T,sep=" "))
+  
+  
+  
+}else if (is.character(vecto))
+  
+  msm <- paste("la variable", i, "es un", class(variable))
+}}
+
+
+
+
+#Combinar función con el for
+
+valores_completos <- function(tabla,
+                              variable){
+  
+  # Extraer el vector de la variable
+  
+  vector <- tabla[[variable]]
+  
+  # Calcular el tamaño
+  
+  todos <- length(vector)
+  
+  # Ver los completos
+  
+  vector_sin_na <- vector[!is.na(vector)]
+  
+  completos <- length(vector_sin_na)
+  
+  #
+  
+  # Imprimir el mensaje
+  mensaje <- paste("el vector tiene",
+                   todos, "elementos y",
+                   completos,"no son NA",sep = " ")
+  
+  return(mensaje)
+}
+
+
